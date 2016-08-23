@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {JambotronComponent} from './components/jumbotron/jumbotron.component';
 import {HomeComponent} from './components/pages/home.component'
@@ -10,7 +11,7 @@ import {AboutComponent} from './components/pages/about.component'
   template: `<navbar></navbar>
   <jumbotron></jumbotron>
   <div class="container">
-    <home></home>
+    <router-outlet></router-outlet>
   </div>`,
   directives: [NavbarComponent, JambotronComponent, HomeComponent, AboutComponent]
 })
